@@ -1,4 +1,4 @@
-#Server Monitor
+# Server Monitor
 
 Bash script for monitoring server health with email alert notifications.
 
@@ -7,12 +7,12 @@ Bash script for monitoring server health with email alert notifications.
  - free RAM less than 100MB
  - CPU load average more than 1.5
 
-##Requirements
+## Requirements
 
  - msmtp (for email notifications)
  - Linux/Unix server
 
-##Setup
+## Setup
 
 1. Configure msmtp:
 ```bash
