@@ -38,7 +38,7 @@ else
 	message+="CPU load - $(echo ${cpu_load} | awk '{printf "%.2f", $1/100}')%\n"
 fi
 
-#if [ $has_problem = "true" ]; then
-#	echo -e "$message" | msmtp $main_mail
-#fi
-echo -e "$message" | msmtp $main_mail
+if [ $has_problem = "true" ]; then
+	echo -e "$message" | msmtp $main_mail
+fi
+#echo -e "$message" | msmtp $main_mail
