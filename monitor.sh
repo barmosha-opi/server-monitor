@@ -35,7 +35,7 @@ else
 	message+="Available space on disk -  $((100-$used_space))%\n"
 fi
 
-if [ "$free_mem" -lt 1000 ]; then
+if [ "$free_mem" -lt 100 ]; then
 	#echo "WARNING - low RAM"
 	message+="WARNING - RAM level is at ${free_mem}\n"
 	has_problem=true
